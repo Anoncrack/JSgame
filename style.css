@@ -1,0 +1,58 @@
+.game {
+    width: 600px;
+    height: 200px;
+    border-bottom: 6px #000;
+    margin: auto;
+}
+#girl {
+    width: 421px;
+    height: 481px;
+    transform: scale(0.2);
+    background-image: url(img/PngItem_4349470.png);
+    box-sizing: 50px 50px;
+    position: relative;
+    top: -40px;
+    left: -200px;
+
+}
+#heart {
+    width: 1024px;
+    height: 1185px;
+    transform: scale(0.08);
+    background-image: url(img/PngItem_4625667.png);
+    box-sizing: 20px 40px;
+    position: relative;
+    bottom: 873px;
+    left: 220px;
+    animation: heartMov 5s infinite linear;
+
+}
+@keyframes heartMov {
+    0% {
+        left: 220px;
+    }
+    100% {
+        left: -560px;
+    }
+}
+
+.jump {
+    animation: girlJump 1s linear;
+}
+@keyframes girlJump {
+    0% {
+        top: -40px;
+    }
+    30% {
+        top: -80px;
+    }
+    50% {
+        top: -100px;
+    }
+    80% {
+        top: -80px;
+    }
+    100% {
+        left: -40px;
+    }
+}
